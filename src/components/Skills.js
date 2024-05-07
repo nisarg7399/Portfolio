@@ -39,7 +39,7 @@ export const Skills = () => {
                 {({ isVisible }) => (
                   <div
                     className={
-                      isVisible ? "animate__animated animate__fadeInLeft" : ""
+                      isVisible ? "animate__animated animate__fadeIn" : ""
                     }
                   >
                     <h2>Skills</h2>

@@ -82,8 +82,22 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+@media (max-width: 600px) {
+  nav.navbar a.navbar-brand {
+      width: 50%; /* Adjust the width as needed for mobile */
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: 400;
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    padding: 0 10px;
+    font-size: 18px;
+    opacity: 0.75;
+  }
+}
 nav.navbar {
-  padding: 18px 0;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -101,7 +115,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 0 10px;
   font-size: 18px;
   opacity: 0.75;
 }
@@ -143,7 +157,7 @@ span.navbar-text {
     transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
+	width: 50%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
@@ -155,6 +169,7 @@ span.navbar-text {
   color: #fff;
   border: 1px solid #fff;
   padding: 18px 34px;
+  padding-top: 20px;
   font-size: 18px;
   margin-left: 18px;
 	position: relative;
@@ -173,7 +188,7 @@ span.navbar-text {
   left: 0;
   top: 0;
   z-index: -1;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .navbar-text button:hover {
   color: #121212;
@@ -229,6 +244,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+nav.navbar .navbar-collapse {
+  width: 100%;
+  height: auto;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 /************ Banner Css ************/
 .banner {
@@ -625,9 +650,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
-@media (min-width: 992px) {
-  /* Adjust for laptop view (min-width: 992px) */
-  .footer {
-    justify-content: flex-start; /* Left align items horizontally */
+@media (max-width: 768px) {
+  .footer img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   }
 }
+

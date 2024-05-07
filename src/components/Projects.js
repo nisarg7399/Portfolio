@@ -30,7 +30,7 @@ export const Projects = () => {
       <Container>
       <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__slideInDown" : ""}>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
         <h2>Projects</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
