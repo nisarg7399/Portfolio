@@ -44,10 +44,7 @@ export const Skills = () => {
                   >
                     <h2>Skills</h2>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a{" "}
+                    As a web developer, I specialize in crafting dynamic and visually appealing web applications using HTML, CSS, and JavaScript. With expertisein frontend development using ReactJS and in backend development using PHP, I build robust and scalable solutions to meet client needs. Additionally, my proficiency in database management with MySQL ensures efficient data storage and retrieval, enhancing the performance and functionality of web applications.
                     </p>
                   </div>
                 )}

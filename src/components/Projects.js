@@ -10,35 +10,45 @@ export const Projects = () => {
   const projects = [
     {
       title: "Canteen Automation System",
-      description: "Canteen Automation System is an efficient and user-friendly project designed to streamline and automate canteen operations. It simplifies the entire process by integrating features like online ordering, digital menu management and inventory tracking",
+      description:
+        "Canteen Automation System is an efficient and user-friendly project designed to streamline and automate canteen operations. It simplifies the entire process by integrating features like online ordering, digital menu management and inventory tracking",
       imgUrl: projImg1,
     },
     {
-        title: "Ecommerce Website",
-        description: "Explore the latest electronics at our online store, offering a curated selection of top-notch gadgets and devices. From cutting-edge smartphones to sleek laptops and immersive audio systems, we provide quality products and seamless shopping experiences for tech enthusiasts worldwide.",
-        imgUrl: projImg2,
+      title: "Ecommerce Website",
+      description:
+        "Explore the latest electronics at our online store, offering a curated selection of top-notch gadgets and devices. From cutting-edge smartphones to sleek laptops and immersive audio systems, we provide quality products and seamless shopping experiences for tech enthusiasts worldwide.",
+      imgUrl: projImg2,
     },
     {
-        title: "InsightPad",
-        description:"Transforming Video Content Into Study Notes Using ChatGPT API",
-        imgUrl: projImg3,
+      title: "InsightPad",
+      description:
+        "Transforming Video Content Into Study Notes Using ChatGPT API",
+      imgUrl: projImg3,
     },
   ];
-  
+
   return (
     <section className="project" id="project">
       <Container>
-      <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-        <h2>Projects</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-        </div>}
+        <TrackVisibility>
+          {({ isVisible }) => (
+            <div
+              className={isVisible ? "animate__animated animate__fadeIn" : ""}
+            >
+              <h2>Projects</h2>
+              <p>
+                "Simplify canteen operations seamlessly with our Canteen
+                Automation System, integrating online ordering, digital menu
+                management, and inventory tracking. Dive into our Ecommerce
+                Website, offering a curated selection of cutting-edge
+                electronics for tech enthusiasts worldwide. Enhance learning
+                with InsightPad, utilizing the ChatGPT API to transform video
+                content into comprehensive study notes, fostering academic
+                excellence."
+              </p>
+            </div>
+          )}
         </TrackVisibility>
         <Tab.Container id="project-tabs" defaultActiveKey="first">
           <Nav
@@ -86,10 +96,8 @@ export const Projects = () => {
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
-        </Container>
+      </Container>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
 };
-
-
