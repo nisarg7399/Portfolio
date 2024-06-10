@@ -590,8 +590,9 @@ nav.navbar .navbar-collapse {
   line-height: 1.2em;
 }
 
-
-
+.mydiv{
+  margin-bottom: -100px;
+}
 .new-email-bx {
   background: #fff;
   padding: 5px;
@@ -657,5 +658,9 @@ nav.navbar .navbar-collapse {
   margin-right: auto;
   width: 50%;
   }
+}
+.thediv{
+  padding-top: 20px;
+  margin-bottom: -30px;
 }
 
